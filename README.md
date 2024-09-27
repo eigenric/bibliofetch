@@ -4,7 +4,7 @@ Ricardo Ruiz Fernández de Alba
 
 ## Descripción del problema
 
-Dados una serie de asignaturas de la Universidad de Granada puede ser tedioso o inaccesible conocer y acceder al material bibliográfico requerido puesto que en muchos casos el apartado de la guía docente no se encuentra en un formato estucturado o puede contener enlaces caídos.
+Dadas una serie de asignaturas de la Universidad de Granada puede ser tedioso o inaccesible conocer y acceder al material bibliográfico requerido, puesto que en muchos casos, el apartado de la guía docente no se encuentra en un formato estucturado o puede contener enlaces caídos.
 
 ## Configuración de Git y Github
 
