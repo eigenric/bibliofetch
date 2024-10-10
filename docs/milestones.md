@@ -18,7 +18,7 @@
 
 **Historias de Usuario**: [HU1]
 - **Objetivo**: Desarrollar la funcionalidad para extraer datos bibliográficos de las guías docentes (PDF o web) y organizarlos de manera estructurada. 
-- **Entregable**: Módulo que recibe una guía docente como entrada web, extrae la información bibliográfica y la organiza en un formato estructurado por atributos (título, autor, editorial, año, ISBN, etc.). Requires [M0].
+- **Entregable**: Módulo que recibe una guía docente como entrada web, extrae la información bibliográfica y la organiza en un formato estructurado por atributos (título, autor, editorial, año, ISBN, etc.). Requiere [M0].
 - **Viabilidad**: Se etiquetarán manualmente algunas guías docentes y se testeará el módulo para verificar la corrección de la extracción.
 
 ## [M2] Bibliofetch permite seleccionar libros favoritos
