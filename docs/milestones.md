@@ -1,22 +1,37 @@
 # Milestones - Bibliofetch
 
-## [M0] Modelado del Problema
-- **Objetivo**: Comprender en profundidad las dificultades de los estudiantes al acceder y manejar la bibliografía, definiendo personas y sus "user journeys" al gestionar la bibliografía.
-- **Entregable**: Documento que describe los user-journeys e historias de usuario al tratar con la bibliografía.
-- **Viabilidad**: Validación mediante la revisión del documento por pares.
+## [M0] Especificación del dominio del problema
+**Historias de Usuario**: [HU1], [HU2], [HU3]
+
+**Objetivo**: A partir de las Historias de Usuario (HUs), reconocer los elementos clave del dominio y sus relaciones con el fin de modelar un sistema que facilite el acceso y gestión de la bibliografía de las asignaturas de los estudiantes.
+
+**Entregables:**
+    - Código que represente los elementos del dominio, con estructuras para Libro, Asignatura, Bibliografía.
+    - De igual manera, las relaciones entre los elementos debe ser modelada, con atención a los atributos del Libro.
+
+**Viabilidad:** 
+    - El modelo es válido si incorpora todas las entidades esenciales del dominio y sus relaciones, correctamente implementadas.
+    - Una asignatura debe tener asociadas dos Bibliografías: fundamental y complementaria.
+    - Se considera viable cuando otro desarrollador puede comprender el modelo y continuar su desarrollo a partir de la especificación.    
 
 ## [M1] Bibliofetch extrae la bibliografía de las guías docentes
+
+**Historias de Usuario**: [HU1]
 - **Objetivo**: Desarrollar la funcionalidad para extraer datos bibliográficos de las guías docentes (PDF o web) y organizarlos de manera estructurada. 
-- **Entregable**: Módulo que recibe una guía docente como entrada (en formato pdf o web), extrae la información bibliográfica y la organiza en un formato estructurado por atributos (título, autor, editorial, año, ISBN, etc.). 
+- **Entregable**: Módulo que recibe una guía docente como entrada web, extrae la información bibliográfica y la organiza en un formato estructurado por atributos (título, autor, editorial, año, ISBN, etc.). Requires [M0].
 - **Viabilidad**: Se etiquetarán manualmente algunas guías docentes y se testeará el módulo para verificar la corrección de la extracción.
 
-## [M2] Bibliofetch filtra la bibliografía según Idioma.
-- **Objetivo**: Reconocer el idioma de la bibliografía y filtrarla según el idioma preferido por el usuario.
-(Requiere superar el Milestone M1)
-- **Entregable**: Módulo que, dado un conjunto de libros, identifica el idioma de cada libro y filtra los libros según el idioma preferido por el usuario.
-- **Viabilidad**: Se etiquetarán manualmente algunos libros con su idioma y se testeará el módulo para verificar la corrección del filtrado.
+## [M2] Bibliofetch permite seleccionar libros favoritos
 
-## [M3] Bibliofetch devuelve las guías docentes de las asignaturas según Grado y Curso
-- **Objetivo**: Simplificar la búsqueda de bibliografía permitiendo a los usuarios obtener la bibliografía según su grado, curso e idioma. (Requiere superar el Milestone M1 y M2 )
-- **Entregable**: Módulos que, dado el grado y curso del usuario e idioma de preferencia, identifica las asignaturas asociadas al curso del grado y muestra la bibliografía correspondiente en ese idioma (usando el módulo de extracción y el de filtrado por idioma).
-- **Viabilidad**: Se obtendrá un conjunto de datos que relaciona grados, cursos, asignaturas y guías docentes, y se testeará el módulo para verificar la corrección de la búsqueda.
+**Historias de Usuario**: [HU2]
+
+- **Objetivo**: Desarrollar la funcionalidad para que los estudiantes puedan seleccionar libros favoritos de la bibliografía extraída, con el fin de priorizar su estudio.
+- **Entregable**: Módulo que permite al usuario seleccionar sus libros favoritos, a partir de los datos bibliográficos extraídos. Requiere [M1].
+- **Viabilidad**: Se testeará el módulo para verificar la correcta selección de libros favoritos.
+
+## [M2] Bibliofetch exporta la bibliografía en formato BibTeX
+**Historias de Usuario**: [HU4]
+
+**Objetivo**: A partir de los datos bibliográficos extraídos, generar un archivo BibTeX que permita a los usuarios citarla en sus trabajos académicos.
+**Entregable**: Módulo que recibe los datos bibliográficos estructurados y genera un archivo BibTeX con los atributos de los libros. Requiere [M1].
+**Viabilidad**: Se testeará el módulo para verificar la corrección de la exportación del archivo BibTeX.
