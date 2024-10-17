@@ -1,7 +1,7 @@
 # Milestones - Bibliofetch
 
 ## [M0] Especificación del dominio del problema
-**Historias de Usuario**: [HU1], [HU2], [HU3]
+**Historias de Usuario**: [HU1]
 
 **Objetivo**: A partir de las Historias de Usuario (HUs), reconocer los elementos clave del dominio y sus relaciones con el fin de modelar un sistema que facilite el acceso y gestión de la bibliografía de las asignaturas de los estudiantes.
 
