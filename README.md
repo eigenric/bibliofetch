@@ -27,6 +27,13 @@ En la [Guía Docente](https://www.ugr.es/estudiantes/grados/grado-ingenieria-inf
 - 2 de los 6 libros recomendados (Pervasive systems and ubiquitous computing y Ambient Intelligence) no están disponibles en la biblioteca de la universidad.
 - En particular, el primer libro tiene un precio de 138€.
 
+## User Journeys, Historias de Usuario y Milestones
+
+En los siguientes documentos, se detallan los user journeys, historias de usuario y milestones que se han definido para el desarrollo de la aplicación Bibliofetch:
+
+- [User Journeys](docs/user-journeys.md)
+- [User Stories](docs/user-stories.md)
+- [Milestones](docs/milestones.md)
 
 ## Configuración de Git y Github
 
