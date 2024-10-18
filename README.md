@@ -1,5 +1,6 @@
 # Bibliofetch
 
+<<<<<<< HEAD
 ## Formulación del problema
 
 **Cliente:** Estudiante de Ingeniería, Ciencias o Humanidades de la Universidad de Granada.
@@ -38,3 +39,5 @@ En los siguientes documentos, se detallan los user journeys, historias de usuari
 
 - [Configuración de Git](docs/git_config.png)
 - [Clave SSH de Github](docs/ssh_key.png)
+=======
+>>>>>>> 737d612 (Update README.md)
