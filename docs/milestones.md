@@ -11,7 +11,7 @@
 
 **Viabilidad:** 
     - El modelo es válido si incorpora todas las entidades esenciales del dominio y sus relaciones, correctamente implementadas.
-    - Una asignatura debe tener asociadas dos Bibliografías: fundamental y complementaria.
+    - Se considerará viable si la formulación del modelo de asignatura permite priorizar unos libros frente a otros.
     - Se considera viable cuando otro desarrollador puede comprender el modelo y continuar su desarrollo a partir de la especificación.    
 
 ## [M1] Bibliofetch extrae la bibliografía de las guías docentes
@@ -29,7 +29,7 @@
 - **Entregable**: Módulo que permite al usuario seleccionar sus libros favoritos, a partir de los datos bibliográficos extraídos. Requiere [M1].
 - **Viabilidad**: Se testeará el módulo para verificar la correcta selección de libros favoritos.
 
-## [M2] Bibliofetch exporta la bibliografía en formato BibTeX
+## [M3] Bibliofetch exporta la bibliografía en formato BibTeX
 **Historias de Usuario**: [HU4]
 
 **Objetivo**: A partir de los datos bibliográficos extraídos, generar un archivo BibTeX que permita a los usuarios citarla en sus trabajos académicos.
