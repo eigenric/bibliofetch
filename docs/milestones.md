@@ -1,6 +1,7 @@
 # Milestones - Bibliofetch
 
-Se ha planificado el proyecto de forma incremental en una serie de tres milestones ([M0],[M1],[M2])
+Se ha planificado el proyecto de forma incremental en una serie de tres milestones ([M0],[M1],[M2]).
+
 Cada milestone representa un PMV (Producto Mínimamente Viable).
 
 ## [M0] Especificación del problema
