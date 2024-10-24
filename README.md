@@ -3,7 +3,6 @@
 ## Formulación del problema
 
 **Cliente:** Estudiante de Ingeniería, Ciencias o Humanidades de la Universidad de Granada.
-
 **Contexto:**  Con el objetivo de superar con éxito las asignaturas de su grado, los estudiantes deben consultar la bibliografía recomendada. Esta se divide en fundamental y complementaria y está disponible en un apartado de la guía docente de cada asignatura (en PDF y en versión web). 
 
 Dado que quieren minimizar su tiempo y coste empleado en lo relativo a los libros, los estudiantes se encuentran con los siguientes problemas:
@@ -27,6 +26,13 @@ En la [Guía Docente](https://www.ugr.es/estudiantes/grados/grado-ingenieria-inf
 - 2 de los 6 libros recomendados (Pervasive systems and ubiquitous computing y Ambient Intelligence) no están disponibles en la biblioteca de la universidad.
 - En particular, el primer libro tiene un precio de 138€.
 
+## User Journeys, Historias de Usuario y Milestones
+
+En los siguientes documentos, se detallan los user journeys, historias de usuario y milestones que se han definido para el desarrollo de la aplicación Bibliofetch:
+
+- [User Journeys](docs/user-journeys.md)
+- [User Stories](docs/user-stories.md)
+- [Milestones](docs/milestones.md)
 
 ## Configuración de Git y Github
 
