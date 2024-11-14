@@ -8,14 +8,14 @@ type guiaDocente struct{
 	anio int
 	asignatura string
 	
-	bibliografiaBasica []libro			// Lista de libros básicos
+	bibliografiaBasica []libro	    // Lista de libros básicos
 	bibliografiaComplementaria []libro  // Lista de libros complementarios
 }
 
 
 // Crea una nueva guía docente con datos válidos
 func nuevaGuiaDocente(anio int, asignatura string, basica []libro, complementaria []libro) (*guiaDocente, error){
-	bool anioValido = esPositivo(anio)
+	anioValido := esPositivo(anio)
 
 	// Ambos datos inválidos
 	if !anioValido {
