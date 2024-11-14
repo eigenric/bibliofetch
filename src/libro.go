@@ -20,21 +20,15 @@ func esPositivo (num int) bool{
 
 // Crea un nuevo libro con datos válidos
 func nuevoLibro(edicion int, publicacion int, editorial string, datos datosClave) (*libro, error){
-	bool edicionValida = esPositivo(edicion)
-	bool publicacionValida = esPositivo(publicacion)
+	edicionValida := esPositivo(edicion)
+	publicacionValida := esPositivo(publicacion)
 
 	// Ambos datos inválidos
 	if !edicionValida && !publicacionValida {
-		return nil, fmt.Errorf("La edición y la fecha de publicación deben ser positivas")
-	}
-
-	// Edición inválida
-	else if !edicionValida {
+		return nil, errors.New("La edición y la fecha de publicación deben ser positivas")
+	} else if !edicionValida { // Edición inválida
 		return nil, errors.New("El número edición debe ser positivo")
-	}
-
-	// Año de publicación inválida
-	else if !publicacionValida {
+	} else if !publicacionValida { // Año de publicación inválida
 		return nil, errors.New("El año de publicación debe ser positivo")
 	}
 
