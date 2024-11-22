@@ -7,8 +7,8 @@ import (
 )
 
 type Libro struct{
-	Edicion 		int `default:"1"`
-	AnioPublicacion int `default:"1"`
+	Edicion int 
+	AnioPublicacion int 
 
 	Editorial string
 	DatosLibro DatosClave
@@ -17,30 +17,6 @@ type Libro struct{
 // Comprueba que un dato sea positivo
 func EsPositivo (valor int) bool{
 	return valor >= 0
-}
-
-// Establece valores por defecto si no existen (función privada)
-func setDefaults (obj interface{}) {
-	v := reflect.ValueOf(obj).Elem()
-	t := v.Type()
-
-	for i := 0; i < v.NumField(); i++ {
-		variable := v.Field(i)
-		tipoVariable := t.Field(i)
-
-		// Comprueba si es un entero y si tiene el valor por defecto (0)
-		if variable.Kind() == reflect.Int && variable.Int() == 0 {
-
-			// Comprueba si tiene etiqueta "default"
-			if valorDefault, ok := tipoVariable.Tag.Lookup("default"); ok {
-
-				// Cambia el valor si es entero
-				if enteroDefault, err := strconv.Atoi(valorDefault); err == nil {
-					variable.SetInt(int64(enteroDefault))
-				}
-			}
-		}
-	}
 }
 
 // Crea un nuevo libro con datos válidos
@@ -59,9 +35,6 @@ func NuevoLibro(edicion int, publicacion int, editorial string, datos DatosClave
 
 	// Datos válidos: se crea el libro sin devolver errores
 	libro := &Libro{edicion, publicacion, editorial, datos}
-
-	// Se asignan los valores por defecto si fueran necesarios
-	setDefaults(libro)
 
 	return libro, nil
 }
