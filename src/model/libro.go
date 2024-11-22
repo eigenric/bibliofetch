@@ -15,8 +15,8 @@ type Libro struct{
 }
 
 // Comprueba que un dato sea positivo
-func EsPositivo (num int) bool{
-	return num >= 0
+func EsPositivo (valor int) bool{
+	return valor >= 0
 }
 
 // Establece valores por defecto si no existen (función privada)
