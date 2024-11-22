@@ -9,8 +9,8 @@ type GuiaDocente struct{
 	Anio int
 	Asignatura string
 	
-	BibliografiaBasica []Libro	    // Lista de libros básicos
-	BibliografiaComplementaria []Libro  // Lista de libros complementarios
+	BibliografiaBasica []Libro
+	BibliografiaComplementaria []Libro
 }
 
 // NuevaGuiaDocente crea una nueva guía docente a partir de un handler de fichero.
